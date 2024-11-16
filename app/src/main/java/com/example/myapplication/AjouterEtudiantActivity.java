@@ -31,7 +31,7 @@ public class AjouterEtudiantActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajouter_etudiant);
- 
+
         // Récupérer l'intent
         Intent in = getIntent();
 
@@ -105,7 +105,7 @@ public class AjouterEtudiantActivity extends AppCompatActivity {
         // Utiliser OpenCSV pour lire les données du fichier CSV
         try (CSVReader reader = new CSVReader(new FileReader(file))) {
             return reader.readAll();
-        } catch (IOException | CsvException e) {
+        } catch (IOException e) {
             e.printStackTrace();
             return null;
         }

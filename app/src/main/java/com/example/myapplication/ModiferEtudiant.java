@@ -138,7 +138,7 @@ public class ModiferEtudiant extends AppCompatActivity {
         // Utiliser OpenCSV pour lire les données du fichier CSV
         try (CSVReader reader = new CSVReader(new FileReader(file))) {
             return reader.readAll();
-        } catch (IOException | CsvException e) {
+        } catch (IOException e) {
             e.printStackTrace();
             return null;
         }
