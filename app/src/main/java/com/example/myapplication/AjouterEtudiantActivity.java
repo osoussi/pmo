@@ -31,7 +31,7 @@ public class AjouterEtudiantActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ajouter_etudiant);
-
+ 
         // Récupérer l'intent
         Intent in = getIntent();
 
